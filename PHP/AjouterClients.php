@@ -7,7 +7,7 @@
     <!--encodage de la page-->
     <meta charset="utf-8" />
     <!--titre de la page-->
-    <title>Accueil</title>
+    <title>Ajout Client</title>
     <!--lien vers le CSS de la page-->
     <link rel="stylesheet" href="../CSS/Style.css" />
     <!--icone de la page-->
