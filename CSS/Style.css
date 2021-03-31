@@ -13,7 +13,7 @@ body {
 }
 
 /*modification du CSS des objets h1*/
-h1 {
+h1, h3 {
     /*soulignage du texte*/
     text-decoration: underline;
     /*modification de la couleur en blanc*/
@@ -69,4 +69,43 @@ footer {
 .navLink:link {
     /*couleur blanche*/
     color: white;
+}
+
+/*modification du CSS des objets nav*/
+nav {
+    /*position fixe*/
+    position: fixed;
+    /*en haut a gauche*/
+    top: 0;
+    left: 0;
+    /*bordure solide de 2 pixels blanche*/
+    border: solid 2px white;
+    /*couleur de background noire*/
+    background-color: black;
+    /*épaisseur de 10%*/
+    width: 10vw;
+    /*padding de 15 pixels*/
+    padding: 15px;
+}
+
+/*modification du CSS des objets de class TextCadre*/
+.TextCadre {
+    /*mode de display inline block*/
+    display: inline-block;
+    /*épaisseur 10% de l'écran*/
+    width: 10vw;
+    /*hauteur 10% de l'écran*/
+    height: 10vh;
+    /*bordure blanche solid de 1 pixel*/
+    border: solid white 1px;
+    /*couleur de background noir*/
+    background-color: black;
+    /*couleur de texte blanche*/
+    color: white;
+}
+
+/*modification du CSS des objets d'id ClientTable*/
+#ClientTable{
+    /*marge gauche de 15%*/
+    margin-left:15vw;
 }
