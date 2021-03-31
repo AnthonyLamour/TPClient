@@ -31,6 +31,15 @@
         <!--lien vers la page de suppression de clients-->
         <a href="SuppressionClients" class="navLink" >Suppression clients</a><br/>
     </nav>
+
+    <!--menu de navigation entre les pages version sans htaccess en cas de non fonctionnemet de ce dernier
+    <nav>
+        <h3>Menu de navigation :</h3>
+        <a href="../index.html" class="navLink" >Accueil</a><br/>
+        <a href="ListeDeClient.php" class="navLink" >Récupération clients</a><br/>
+        <a href="AjouterClients.php" class="navLink" >Ajout clients</a><br/>
+        <a href="SuppressionClients.php" class="navLink" >Suppression clients</a><br/>
+    </nav>-->
     
     <!--titre principal de la page-->
     <h1>Modifier un client de la liste des clients</h1>
