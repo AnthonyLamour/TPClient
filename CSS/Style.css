@@ -109,3 +109,39 @@ nav {
     /*marge gauche de 15%*/
     margin-left:15vw;
 }
+
+/*modification du CSS des objets d'id ClientTableSansID*/
+#ClientTableSansID {
+    /*marge gauche de 15%*/
+    margin-left: 20vw;
+}
+
+/*modification du CSS des objets input et select*/
+input, select {
+    /*mode de display block*/
+    display: block;
+    /*marge basse 1% de l'écran*/
+    margin-bottom: 1vh;
+}
+
+/*modification du CSS des objets d'id AjoutClientContenu*/
+#AjoutClientContenu {
+    /*épaisseur 50%*/
+    width: 50%;
+    /*marge guauche 25 % de l'écran*/
+    margin-left: 25%;
+    /*alignement du texte à guauche*/
+    text-align: left;
+    /*couleur de background noir*/
+    background-color: black;
+    /*couleur de texte blanche*/
+    color: white;
+}
+
+/*modification du CSS des span*/
+span{
+    /*marge gauche de 1%*/
+    margin-left:1vw;
+    /*couleur de texte rouge*/
+    color:red;
+}

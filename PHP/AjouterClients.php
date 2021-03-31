@@ -33,38 +33,53 @@
 
     <!--Contenu de la page-->
     <fieldset id="AjoutClientContenu">
+        <!--légende du formulaire-->
         <legend>
             Formulaire d'ajout
         </legend>
+        <!--Formulaire de la page-->
         <form id="MainFormulaire">
-            <label for="NCLI">Numéro de client :</label>
-            <input type="text" id="NCLI" placeholder="A000" required/><span id="MessageErreurNCLI" class="MessageErreur"></span>
-            <label for="NOM">Nom :</label>
-            <input type="text" id="NOM" placeholder="Nom" required/><span id="MessageErreurNOM" class="MessageErreur"></span>
-            <label for="ADRESSE">Adresse :</label>
-            <input type="text" id="ADRESSE" placeholder="4 rue Exemple" required/><span id="MessageErreurADRESSE" class="MessageErreur"></span>
-            <label for="LOCALITE">Localité :</label>
-            <input type="text" id="LOCALITE" placeholder="Paris" required/><span id="MessageErreurLOCALITE" class="MessageErreur"></span>
+            <!--label de l'input NCLI-->
+            <label for="NCLI">Numéro de client :</label><span id="MessageErreurNCLI" class="MessageErreur"></span>
+            <!--input NCLI-->
+            <input type="text" id="NCLI" placeholder="A000" required/>
+            <!--label de l'input NOM-->
+            <label for="NOM">Nom :</label><span id="MessageErreurNOM" class="MessageErreur"></span>
+            <!--input NOM-->
+            <input type="text" id="NOM" placeholder="Nom" required/>
+            <!--label de l'input ADRESSE-->
+            <label for="ADRESSE">Adresse :</label><span id="MessageErreurADRESSE" class="MessageErreur"></span>
+            <!--input ADRESSE-->
+            <input type="text" id="ADRESSE" placeholder="4 rue Exemple" required/>
+            <!--label de l'input LOCALITE-->
+            <label for="LOCALITE">Localité :</label><span id="MessageErreurLOCALITE" class="MessageErreur"></span>
+            <!--input LOCALITE-->
+            <input type="text" id="LOCALITE" placeholder="Paris" required/>
+            <!--label de l'input CATEGORIE-->
             <label for="CATEGORIE">Catégorie :</label>
+            <!--input CATEGORIE-->
             <select id="CATEGORIE">
                 <option value="NULL">Aucune</option>
                 <option value="A">A</option>
                 <option value="B">B</option>
                 <option value="C">C</option>
             </select>
-            <label for="COMPTE">Compte :</label>
-            <input type="number" id="COMPTE" placeholder="00" required/><span id="MessageErreurCOMPTE" class="MessageErreur"></span>
+            <!--label de l'input COMPTE-->
+            <label for="COMPTE">Compte :</label><span id="MessageErreurCOMPTE" class="MessageErreur"></span>
+            <!--input COMPTE-->
+            <input type="number" id="COMPTE" placeholder="00" required/>
+            <!--bouton de validation du formulaire-->
             <input type="button" id="ValideButton" value="Valider" onclick="AjouterUnClient()"/>
         </form>
     </fieldset>
     <br/>
     <!--Contenu de la page-->
-    <div id="ClientTable">
+    <div id="ClientTableSansID">
     
     </div>
     
     <script>
-        MainContent=document.getElementById("ClientTable");
+        MainContent=document.getElementById("ClientTableSansID");
         function AjouterUnClient(){
             if(VerifFormulaireAjout()){
                 //reset du div de résultat
@@ -86,14 +101,66 @@
                 xhttp.onreadystatechange = function () {
 				    //si la requête est prête
                     if (this.readyState == 4 && this.status == 200) {
+                        //création d'une nouvelle ligne du tableau
+                        var newLine = document.createElement("tr");
+                        //création d'une nouvelle colone du tableau
+                        var newCol = document.createElement("th");
+                        //set de l'attribut class de la case
+                        newCol.setAttribute("class", "TextCadre");
+                        //remplissage de la case
+                        newCol.innerHTML="Numéro  de client";
+                        //ajout de la case dans la ligne
+                        newLine.appendChild(newCol);
+                        //création d'une nouvelle colone du tableau
+                        var newCol = document.createElement("th");
+                        //set de l'attribut class de la case
+                        newCol.setAttribute("class", "TextCadre");
+                        //remplissage de la case
+                        newCol.innerHTML="Nom";
+                        //ajout de la case dans la ligne
+                        newLine.appendChild(newCol);
+                        //création d'une nouvelle colone du tableau
+                        var newCol = document.createElement("th");
+                        //set de l'attribut class de la case
+                        newCol.setAttribute("class", "TextCadre");
+                        //remplissage de la case
+                        newCol.innerHTML="Adresse";
+                        //ajout de la case dans la ligne
+                        newLine.appendChild(newCol);
+                        //création d'une nouvelle colone du tableau
+                        var newCol = document.createElement("th");
+                        //set de l'attribut class de la case
+                        newCol.setAttribute("class", "TextCadre");
+                        //remplissage de la case
+                        newCol.innerHTML="Localité";
+                        //ajout de la case dans la ligne
+                        newLine.appendChild(newCol);
+                        //création d'une nouvelle colone du tableau
+                        var newCol = document.createElement("th");
+                        //set de l'attribut class de la case
+                        newCol.setAttribute("class", "TextCadre");
+                        //remplissage de la case
+                        newCol.innerHTML="Catégorie";
+                        //ajout de la case dans la ligne
+                        newLine.appendChild(newCol);
+                        //création d'une nouvelle colone du tableau
+                        var newCol = document.createElement("th");
+                        //set de l'attribut class de la case
+                        newCol.setAttribute("class", "TextCadre");
+                        //remplissage de la case
+                        newCol.innerHTML="Compte";
+                        //ajout de la case dans la ligne
+                        newLine.appendChild(newCol);
+                        //ajout de la ligne dans le tableau
+                        newTable.appendChild(newLine);
 					    //récupération et parsage du résultat en JSON avec suppression du caractère vide correspondant à la validation de l'envoie
                         var json = JSON.parse(this.responseText.substring(1));
                         //pour chaque élément du JSON
 					    for (var i = 0; i < json.length; i++) {
 						    //création d'une nouvelle ligne du tableau
-                            var newLine = document.createElement("tr");
+                            newLine = document.createElement("tr");
 						    //création d'une nouvelle colone du tableau
-                            var newCol = document.createElement("td");
+                            newCol = document.createElement("td");
 						    //set de l'attribut class de la case
                             newCol.setAttribute("class", "TextCadre");
 						    //remplissage de la case
