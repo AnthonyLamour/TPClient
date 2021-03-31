@@ -26,6 +26,8 @@
         <a href="ListeDeClient.php" class="navLink" >Récupération clients</a><br/>
         <!--lien vers la page d'ajout de clients-->
         <a href="AjouterClients.php" class="navLink" >Ajout clients</a><br/>
+        <!--lien vers la page de modification de clients-->
+        <a href="ModifierClients.php" class="navLink" >Modification clients</a><br/>
     </nav>
     
     <!--titre principal de la page-->

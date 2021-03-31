@@ -26,6 +26,8 @@
         <a href="AjouterClients.php" class="navLink" >Ajout clients</a><br/>
         <!--lien vers la page de suppression de clients-->
         <a href="SuppressionClients.php" class="navLink" >Suppression clients</a><br/>
+        <!--lien vers la page de modification de clients-->
+        <a href="ModifierClients.php" class="navLink" >Modification clients</a><br/>
     </nav>
     
     <!--titre principal de la page-->
