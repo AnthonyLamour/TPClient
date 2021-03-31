@@ -9,7 +9,7 @@
     <!--titre de la page-->
     <title>Accueil</title>
     <!--lien vers le CSS de la page-->
-    <link rel="stylesheet" href="CSS/Style.css" />
+    <link rel="stylesheet" href="../CSS/Style.css" />
     <!--icone de la page-->
     <link rel="icon" href="Images/icon.png">
 </head>
@@ -17,12 +17,13 @@
 <!--contenu de la page-->
 <body>
     <!--menu de navigation entre les pages-->
-    <nav id="MainNav">
+    <nav>
         <!--titre du menu de navigation-->
-        <h1>Sélectionner une partie du TP :</h1>
-        <!--lien vers la page permettant de lister les clients-->
-        <a href="PHP/ListeDeClient.php" class="navLink">Récupérer la liste des clients</a>
+        <h3>Menu de navigation :</h3>
+        <!--lien vers la page d'accauil-->
+        <a href="../index.html" class="navLink" >Accueil</a><br/>
     </nav>
+
     <!--footer-->
     <footer>
         <!--paragraphe de footer-->
