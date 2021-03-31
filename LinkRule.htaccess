@@ -1,0 +1,6 @@
+#autorisation du RewriteEngine
+RewriteEngine on
+
+RewriteRule ^(.*)\.php$ /$1 [L]
+
+RewriteRule ^(.*)\.html$ /$1 [L]

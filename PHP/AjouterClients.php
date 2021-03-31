@@ -23,13 +23,13 @@
         <!--titre du menu de navigation-->
         <h3>Menu de navigation :</h3>
         <!--lien vers la page d'accueil-->
-        <a href="../index.html" class="navLink" >Accueil</a><br/>
+        <a href="../index" class="navLink" >Accueil</a><br/>
         <!--lien vers la page de récupération des clients-->
-        <a href="ListeDeClient.php" class="navLink" >Récupération clients</a><br/>
+        <a href="ListeDeClient" class="navLink" >Récupération clients</a><br/>
         <!--lien vers la page de suppression de clients-->
-        <a href="SuppressionClients.php" class="navLink" >Suppression clients</a><br/>
+        <a href="SuppressionClients" class="navLink" >Suppression clients</a><br/>
         <!--lien vers la page de modification de clients-->
-        <a href="ModifierClients.php" class="navLink" >Modification clients</a><br/>
+        <a href="ModifierClients" class="navLink" >Modification clients</a><br/>
     </nav>
     
     <!--titre principal de la page-->
