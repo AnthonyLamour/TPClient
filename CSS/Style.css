@@ -125,7 +125,7 @@ input, select {
 }
 
 /*modification du CSS des objets d'id AjoutClientContenu*/
-#AjoutClientContenu, #SuppressionClientContenu, #ModifierClientContenu {
+#AjoutClientContenu, #SuppressionClientContenu, #ModifierClientContenu, #ModifierClientContenuSub {
     /*épaisseur 50%*/
     width: 50%;
     /*marge guauche 25 % de l'écran*/
