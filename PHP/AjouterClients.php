@@ -9,22 +9,31 @@
     <!--titre de la page-->
     <title>Accueil</title>
     <!--lien vers le CSS de la page-->
-    <link rel="stylesheet" href="CSS/Style.css" />
+    <link rel="stylesheet" href="../CSS/Style.css" />
     <!--icone de la page-->
-    <link rel="icon" href="Images/icon.png">
+    <link rel="icon" href="../Images/icon.png">
 </head>
 
 <!--contenu de la page-->
 <body>
     <!--menu de navigation entre les pages-->
-    <nav id="MainNav">
+    <nav>
         <!--titre du menu de navigation-->
-        <h1>Sélectionner une partie du TP :</h1>
-        <!--lien vers la page permettant de lister les clients-->
-        <a href="PHP/ListeDeClient.php" class="navLink">Récupérer la liste des clients</a><br />
-        <!--lien vers la page d'ajout de clients-->
-        <a href="PHP/AjouterClients.php" class="navLink">Ajouter des clients à la liste</a><br />
+        <h3>Menu de navigation :</h3>
+        <!--lien vers la page d'accueil-->
+        <a href="../index.html" class="navLink" >Accueil</a><br/>
+        <!--lien vers la page de récupération des clients-->
+        <a href="ListeDeClient.php" class="navLink" >Récupération clients</a><br/>
     </nav>
+    
+    <!--titre principal de la page-->
+    <h1>Ajouter un client à la liste des clients</h1>
+
+    <!--Contenu de la page-->
+    <div id="AjoutClientContenu">
+
+    </div>
+
     <!--footer-->
     <footer>
         <!--paragraphe de footer-->

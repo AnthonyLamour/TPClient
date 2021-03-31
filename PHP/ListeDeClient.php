@@ -20,8 +20,10 @@
     <nav>
         <!--titre du menu de navigation-->
         <h3>Menu de navigation :</h3>
-        <!--lien vers la page d'accauil-->
+        <!--lien vers la page d'accueil-->
         <a href="../index.html" class="navLink" >Accueil</a><br/>
+        <!--lien vers la page d'ajout de clients-->
+        <a href="AjouterClients.php" class="navLink" >Ajout clients</a><br/>
     </nav>
     
     <!--titre principal de la page-->
