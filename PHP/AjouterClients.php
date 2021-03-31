@@ -26,6 +26,8 @@
         <a href="../index.html" class="navLink" >Accueil</a><br/>
         <!--lien vers la page de récupération des clients-->
         <a href="ListeDeClient.php" class="navLink" >Récupération clients</a><br/>
+        <!--lien vers la page de suppression de clients-->
+        <a href="SuppressionClients.php" class="navLink" >Suppression clients</a><br/>
     </nav>
     
     <!--titre principal de la page-->
